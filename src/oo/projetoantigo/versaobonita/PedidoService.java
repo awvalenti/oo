@@ -1,10 +1,10 @@
-package versaobonita;
+package oo.projetoantigo.versaobonita;
 
-import dummies.CancelamentoDao;
-import dummies.CancelamentoInvalidoException;
-import dummies.CancelamentoPedido;
-import dummies.EmailService;
-import dummies.Pedido;
+import oo.projetoantigo.dummies.CancelamentoDao;
+import oo.projetoantigo.dummies.CancelamentoInvalidoException;
+import oo.projetoantigo.dummies.CancelamentoPedido;
+import oo.projetoantigo.dummies.EmailService;
+import oo.projetoantigo.dummies.Pedido;
 
 public class PedidoService {
 	private CancelamentoDao cancelamentoDao;

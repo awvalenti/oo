@@ -1,10 +1,10 @@
-package versaobonita;
+package oo.projetoantigo.versaobonita;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-import dummies.Cliente;
-import dummies.ItemVenda;
+import oo.projetoantigo.dummies.Cliente;
+import oo.projetoantigo.dummies.ItemVenda;
 
 public class Venda {
 

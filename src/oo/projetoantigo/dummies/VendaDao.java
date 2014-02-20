@@ -1,6 +1,6 @@
-package dummies;
+package oo.projetoantigo.dummies;
 
-import versaobonita.Venda;
+import oo.projetoantigo.versaobonita.Venda;
 
 public class VendaDao {
 

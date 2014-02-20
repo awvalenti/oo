@@ -1,14 +1,14 @@
-package versaobonita;
+package oo.projetoantigo.versaofeia;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-import dummies.Cliente;
-import dummies.ClienteService;
-import dummies.EmailService;
-import dummies.ItemVenda;
-import dummies.TemplatesEmails;
-import dummies.VendaDao;
+import oo.projetoantigo.dummies.Cliente;
+import oo.projetoantigo.dummies.ClienteService;
+import oo.projetoantigo.dummies.EmailService;
+import oo.projetoantigo.dummies.ItemVenda;
+import oo.projetoantigo.dummies.TemplatesEmails;
+import oo.projetoantigo.dummies.VendaDao;
 
 public class VendaService {
 

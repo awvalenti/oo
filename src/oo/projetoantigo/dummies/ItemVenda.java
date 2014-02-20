@@ -1,4 +1,4 @@
-package dummies;
+package oo.projetoantigo.dummies;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
