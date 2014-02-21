@@ -5,6 +5,7 @@ public class Jogo {
 	private Personagem personagem;
 
 	public void aoColidirComInimigo() {
+		// Personagem recebeu ataque
 		personagem.setPontosDeVida(personagem.getPontosDeVida() - 1);
 
 		if (personagem.getPontosDeVida() == 0) {		// Personagem morreu

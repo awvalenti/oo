@@ -20,7 +20,7 @@ public class AplicacaoWeb extends HttpServlet {
 			valorTotalVenda = valorTotalVenda.add(item.getValor());
 		}
 
-		request.setAttribute("campoValorTotalVenda", valorTotalVenda);
+		request.setAttribute("valorTotalVenda", valorTotalVenda);
 
 		request.getRequestDispatcher("WEB-INF/venda/resumo.jsp").forward(request, response);
 	}
