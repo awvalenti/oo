@@ -5,8 +5,6 @@ import java.math.BigDecimal;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-import oo.projetoantigo.dummies.ItemVenda;
-
 public class AplicacaoSwing extends JFrame {
 	private static final long serialVersionUID = 1L;
 

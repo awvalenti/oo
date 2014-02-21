@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import oo.projetoantigo.dummies.ItemVenda;
-
 public class AplicacaoWeb extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
