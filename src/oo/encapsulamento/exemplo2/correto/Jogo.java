@@ -1,4 +1,4 @@
-package oo.projetonovo.encapsulamento.exemplo2.correto;
+package oo.encapsulamento.exemplo2.correto;
 
 public class Jogo {
 

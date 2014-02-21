@@ -1,4 +1,4 @@
-package oo.projetonovo.encapsulamento.exemplo1.incorreto;
+package oo.encapsulamento.exemplo1.incorreto;
 
 import java.math.BigDecimal;
 

@@ -1,4 +1,4 @@
-package oo.projetonovo.encapsulamento.exemplo2.incorreto;
+package oo.encapsulamento.exemplo2.incorreto;
 
 public class Personagem {
 
