@@ -9,6 +9,7 @@ import oo.projetoantigo.dummies.EmailService;
 import oo.projetoantigo.dummies.ItemVenda;
 import oo.projetoantigo.dummies.TemplatesEmails;
 import oo.projetoantigo.dummies.VendaDao;
+import oo.projetoantigo.versaobonita.Venda;
 
 public class VendaService {
 
