@@ -1,4 +1,4 @@
-package oo.projetonovo.encapsulamento.incorreto;
+package oo.projetonovo.encapsulamento.exemplo1.incorreto;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -24,7 +24,7 @@ public class AplicacaoWeb extends HttpServlet {
 
 		request.setAttribute("campoValorTotalVenda", valorTotalVenda);
 
-		request.getRequestDispatcher("WEB-INF/venda/resumo.jsp").forward(request, response);;
+		request.getRequestDispatcher("WEB-INF/venda/resumo.jsp").forward(request, response);
 	}
 
 }
