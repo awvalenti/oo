@@ -12,6 +12,8 @@ public class AplicacaoSwing extends JFrame {
 
 	private Venda venda;
 
+	// ...
+	
 	public void atualizarValorTotalVenda() {
 		BigDecimal valorTotalVenda = BigDecimal.ZERO;
 		for (ItemVenda item : venda.getItens()) {
