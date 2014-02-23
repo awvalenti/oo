@@ -15,11 +15,13 @@ public class AplicacaoSwing extends JFrame {
 	// ...
 	
 	public void atualizarValorTotalVenda() {
+		// Trecho 1
 		BigDecimal valorTotalVenda = BigDecimal.ZERO;
 		for (ItemVenda item : venda.getItens()) {
 			valorTotalVenda = valorTotalVenda.add(item.getValor());
 		}
-
+		
+		// Trecho 2
 		campoValorTotalVenda.setText(valorTotalVenda.toString());
 	}
 
