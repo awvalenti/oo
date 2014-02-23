@@ -4,10 +4,11 @@ import java.math.BigDecimal;
 
 public class ItemVenda {
 
-	private BigDecimal valor;
+	private BigDecimal valorProduto;
+	private int quantidade;
 
-	public BigDecimal getValor() {
-		return valor;
+	public BigDecimal calcularValor() {
+		return valorProduto * quantidade;
 	}
 
 }
