@@ -7,9 +7,7 @@ public class Venda {
 
 	private List<ItemVenda> itens;
 
-	public List<ItemVenda> getItens() {
-		return itens;
-	}
+	// ...
 
 	public BigDecimal calcularValorTotal() {
 		BigDecimal valorTotal = BigDecimal.ZERO;
