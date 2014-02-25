@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo1.incorreto;
+package oo.encapsulamento.exemplo1.correto;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -10,20 +10,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/venda/resumo")
-public class AplicacaoWeb extends HttpServlet {
+public class InterfaceWeb extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private Venda venda;
 
 	// ...
-	
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Trecho 1
-		BigDecimal valorTotalVenda = BigDecimal.ZERO;
-		for (ItemVenda item : venda.getItens()) {
-			valorTotalVenda = valorTotalVenda.add(item.getProduto().getValor().multiply(item.getQuantidade()));
-		}
+		BigDecimal valorTotalVenda = venda.calcularValorTotal();
 
 		// Trecho 2
 		request.setAttribute("valorTotalVenda", valorTotalVenda);
