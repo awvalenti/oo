@@ -22,7 +22,7 @@ public class AplicacaoWeb extends HttpServlet {
 		// Trecho 1
 		BigDecimal valorTotalVenda = BigDecimal.ZERO;
 		for (ItemVenda item : venda.getItens()) {
-			valorTotalVenda = valorTotalVenda.add(item.calcularValor());
+			valorTotalVenda = valorTotalVenda.add(item.getProduto().getValor().multiply(item.getQuantidade()));
 		}
 
 		// Trecho 2
