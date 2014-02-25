@@ -6,6 +6,8 @@ public class Produto {
 
 	private BigDecimal valor;
 
+	// ...
+
 	public BigDecimal getValor() {
 		return valor;
 	}

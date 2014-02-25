@@ -7,6 +7,8 @@ public class ItemVenda {
 	private Produto produto;
 	private BigDecimal quantidade;
 
+	// ...
+
 	public Produto getProduto() {
 		return produto;
 	}
