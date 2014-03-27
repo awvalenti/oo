@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo2.correto;
+package oo.encapsulamento.exemplo2.etapa1.correto;
 
 public class Personagem {
 
