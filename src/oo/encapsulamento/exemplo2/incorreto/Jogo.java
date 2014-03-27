@@ -8,8 +8,7 @@ public class Jogo {
 		// Personagem recebe ataque
 		personagem.setPontosDeVida(personagem.getPontosDeVida() - 1);
 
-		if (personagem.getPontosDeVida() == 0) {
-			// Personagem morre
+		if (personagem.getPontosDeVida() == 0) { // Personagem morreu
 			mostrarMensagemVocePerdeu();
 			reiniciarFase();
 		}
