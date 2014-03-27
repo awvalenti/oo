@@ -21,8 +21,13 @@ public class Jogo {
 			dano = 1;
 		}
 
-		// Aplica dano apropriado dependendo do inimigo
-		personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
+		if (dano > 0) {
+			// Aplica dano apropriado
+			personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
+
+			// Se dano for positivo, perde todos os itens
+			personagem.getItens().clear();
+		}
 
 		if (personagem.getPontosDeVida() == 0) { // Personagem morreu
 			mostrarMensagemVocePerdeu();
