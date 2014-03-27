@@ -8,7 +8,7 @@ public class Jogo {
 		int dano;
 
 		if (personagem.isInvencivel()) {
-			// Nenhum dano por estar invencivel
+			// Nenhum dano, por estar invencivel
 			dano = 0;
 		} else if (inimigo.ehMaior() ) {
 			// Dano de inimigo maior: 2
