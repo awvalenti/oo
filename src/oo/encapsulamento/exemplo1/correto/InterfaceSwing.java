@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
-public class InterfaceSwing extends JFrame {
+public class InterfaceSwing extends JPanel {
 	private JTextField campoValorTotalVenda;
 	private Venda venda;
 
