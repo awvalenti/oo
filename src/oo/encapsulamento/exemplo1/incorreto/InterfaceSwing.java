@@ -2,10 +2,10 @@ package oo.encapsulamento.exemplo1.incorreto;
 
 import java.math.BigDecimal;
 
-import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class InterfaceSwing extends JFrame {
+public class InterfaceSwing extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	private JTextField campoValorTotalVenda;
