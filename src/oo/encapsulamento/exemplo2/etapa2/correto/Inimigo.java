@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo2.etapa2.incorreto;
+package oo.encapsulamento.exemplo2.etapa2.correto;
 
 public class Inimigo {
 

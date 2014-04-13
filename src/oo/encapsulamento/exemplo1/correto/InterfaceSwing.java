@@ -2,7 +2,7 @@ package oo.encapsulamento.exemplo1.correto;
 
 import java.math.BigDecimal;
 
-import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
