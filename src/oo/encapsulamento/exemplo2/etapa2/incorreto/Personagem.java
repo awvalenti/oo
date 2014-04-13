@@ -29,4 +29,8 @@ public class Personagem {
 		return itens;
 	}
 
+	public void setItens(List<Item> itens) {
+		this.itens = itens;
+	}
+
 }
