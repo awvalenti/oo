@@ -8,13 +8,8 @@ public class Jogo {
 		personagem.receberAtaque();
 
 		if (personagem.morreu()) {
-			mostrarMensagemVocePerdeu();
 			reiniciarFase();
 		}
-	}
-
-	private void mostrarMensagemVocePerdeu() {
-		// ...
 	}
 
 	private void reiniciarFase() {

@@ -4,6 +4,18 @@ public class Jogo {
 
 	private Personagem personagem;
 
+	public Jogo(Personagem personagem) {
+		this.personagem = personagem;
+	}
+
+	public void aoColidirComItem() {
+		personagem.getItens().add(new Item());
+	}
+
+	public void aoColidirComInvencibilidade() {
+		personagem.setInvencivel(true);
+	}
+
 	public void aoColidirComInimigo(Inimigo inimigo) {
 		int dano;
 

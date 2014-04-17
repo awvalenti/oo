@@ -6,8 +6,12 @@ import java.util.List;
 public class Personagem {
 
 	private int pontosDeVida;
+	private List<Item> itens = new ArrayList<Item>();
 	private boolean invencivel;
-	private List<Item> itens = new ArrayList<>();
+
+	public void adicionarItem(Item item) {
+		itens.add(item);
+	}
 
 	public void receberAtaque(Inimigo inimigo) {
 		int dano;
@@ -29,14 +33,16 @@ public class Personagem {
 		if (dano > 0) {
 			// Aplica dano apropriado
 			pontosDeVida -= dano;
-
-			// Se dano for positivo, perde todos os itens
-			itens.clear();
 		}
 	}
 
 	public boolean morreu() {
 		return pontosDeVida <= 0;
+	}
+
+	public void setInvencivel(boolean b) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
