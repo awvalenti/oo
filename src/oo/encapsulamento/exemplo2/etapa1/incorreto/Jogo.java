@@ -8,15 +8,12 @@ public class Jogo {
 		this.personagem = personagem;
 	}
 
-	public void aoColidirComItem() {
-		personagem.getItens().add(new Item());
-	}
-
 	public void aoColidirComInimigo() {
 		// Personagem recebe ataque
 		personagem.setPontosDeVida(personagem.getPontosDeVida() - 1);
 
-		if (personagem.getPontosDeVida() == 0) { // Personagem morreu
+		// Verifica se personagem morreu
+		if (personagem.getPontosDeVida() == 0) {
 			reiniciarFase();
 		}
 	}
