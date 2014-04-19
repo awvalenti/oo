@@ -39,13 +39,8 @@ public class Jogo {
 
 		// Verifica se personagem morreu
 		if (personagem.getPontosDeVida() == 0) {
-			mostrarMensagemVocePerdeu();
 			reiniciarFase();
 		}
-	}
-
-	private void mostrarMensagemVocePerdeu() {
-		// ...
 	}
 
 	private void reiniciarFase() {
