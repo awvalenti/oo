@@ -6,7 +6,9 @@ public class Produto {
 
 	private BigDecimal valor;
 
-	// ...
+	public Produto(BigDecimal valor) {
+		this.valor = valor;
+	}
 
 	public BigDecimal getValor() {
 		return valor;

@@ -7,12 +7,10 @@ import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
 public class InterfaceSwing extends JPanel {
-	private JTextField campoValorTotalVenda;
-	private Venda venda;
 
-	// ...
+	private JTextField campoValorTotalVenda = new JTextField();
 
-	public void atualizarValorTotalVenda() {
+	public void atualizarValorTotalVenda(Venda venda) {
 		// Trecho 1
 		BigDecimal valorTotalVenda = venda.calcularValorTotal();
 

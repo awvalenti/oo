@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 @WebServlet("/venda/resumo")
 public class InterfaceWeb extends HttpServlet {
-	private Venda venda;
-
-	// ...
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Trecho 0
+		Venda venda = (Venda) request.getSession().getAttribute("venda");
+
 		// Trecho 1
 		BigDecimal valorTotalVenda = BigDecimal.ZERO;
 		for (ItemVenda item : venda.getItens()) {

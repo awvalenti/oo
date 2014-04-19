@@ -7,7 +7,9 @@ public class Venda {
 
 	private List<ItemVenda> itens;
 
-	// ...
+	public Venda(List<ItemVenda> itens) {
+		this.itens = itens;
+	}
 
 	public BigDecimal calcularValorTotal() {
 		BigDecimal valorTotal = BigDecimal.ZERO;
