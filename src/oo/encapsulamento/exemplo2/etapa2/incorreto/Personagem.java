@@ -1,13 +1,10 @@
 package oo.encapsulamento.exemplo2.etapa2.incorreto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Personagem {
 
-	private int pontosDeVida;
-	private List<Item> itens = new ArrayList<Item>();
-	private boolean invencivel;
+	private int pontosDeVida = 10;
+	private int contagemDeCaquis = 0;
+	private boolean invencivel = false;
 
 	public int getPontosDeVida() {
 		return pontosDeVida;
@@ -17,12 +14,12 @@ public class Personagem {
 		this.pontosDeVida = pontosDeVida;
 	}
 
-	public List<Item> getItens() {
-		return itens;
+	public int getContagemDeCaquis() {
+		return contagemDeCaquis;
 	}
 
-	public void setItens(List<Item> itens) {
-		this.itens = itens;
+	public void setContagemDeCaquis(int contagemDeCaquis) {
+		this.contagemDeCaquis = contagemDeCaquis;
 	}
 
 	public boolean isInvencivel() {

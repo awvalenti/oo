@@ -2,6 +2,11 @@ package oo.encapsulamento.exemplo2.etapa2.incorreto;
 
 public class Inimigo {
 
+	public boolean ehMenor() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 	public boolean ehMaior() {
 		// TODO Auto-generated method stub
 		return false;

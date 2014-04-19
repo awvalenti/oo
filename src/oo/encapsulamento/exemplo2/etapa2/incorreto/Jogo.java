@@ -8,40 +8,37 @@ public class Jogo {
 		this.personagem = personagem;
 	}
 
-	public void aoColidirComItem() {
-		personagem.getItens().add(new Item());
+	public void aoColidirComCaqui() {
+		personagem.setContagemDeCaquis(personagem.getContagemDeCaquis() + 1);
 	}
 
-	public void aoColidirComInvencibilidade() {
+	public void aoColidirComItemDeInvencibilidade() {
 		personagem.setInvencivel(true);
 	}
 
 	public void aoColidirComInimigo(Inimigo inimigo) {
-		int dano;
+		int dano = 0;
 
 		if (personagem.isInvencivel()) {
 			// Nenhum dano, por estar invencivel
 			dano = 0;
+		} else if (inimigo.ehMenor()) {
+			// Dano de inimigo menor: 1
+			dano = 1;
 		} else if (inimigo.ehMaior() ) {
-			// Dano de inimigo maior: 2
+			// Dano de inimigo maior: 2 (e faz perder os caquis)
 			dano = 2;
+			personagem.setContagemDeCaquis(0);
 		} else if (inimigo.ehChefe()) {
 			// Dano de chefe: todos os pontos de vida
 			dano = personagem.getPontosDeVida();
-		} else {
-			// Dano normal: 1
-			dano = 1;
 		}
 
-		if (dano > 0) {
-			// Aplica dano apropriado
-			personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
+		// Aplica dano apropriado
+		personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
 
-			// Se dano for positivo, perde todos os itens
-			personagem.getItens().clear();
-		}
-
-		if (personagem.getPontosDeVida() == 0) { // Personagem morreu
+		// Verifica se personagem morreu
+		if (personagem.getPontosDeVida() == 0) {
 			mostrarMensagemVocePerdeu();
 			reiniciarFase();
 		}
