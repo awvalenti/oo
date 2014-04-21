@@ -25,7 +25,7 @@ public class Jogo {
 		} else if (inimigo.ehMenor()) {
 			// Dano de inimigo menor: 1
 			dano = 1;
-		} else if (inimigo.ehMaior() ) {
+		} else if (inimigo.ehMaior()) {
 			// Dano de inimigo maior: 2 (e faz perder os caquis)
 			dano = 2;
 			personagem.setContagemDeCaquis(0);
