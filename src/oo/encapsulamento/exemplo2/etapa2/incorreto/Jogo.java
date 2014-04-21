@@ -26,16 +26,20 @@ public class Jogo {
 			// Dano de inimigo menor: 1
 			dano = 1;
 		} else if (inimigo.ehMaior()) {
-			// Dano de inimigo maior: 2 (e faz perder os caquis)
+			// Dano de inimigo maior: 2
 			dano = 2;
-			personagem.setContagemDeCaquis(0);
 		} else if (inimigo.ehChefe()) {
 			// Dano de chefe: todos os pontos de vida
 			dano = personagem.getPontosDeVida();
 		}
 
-		// Aplica dano apropriado
-		personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
+		if (dano > 0) {
+			// Aplica dano apropriado
+			personagem.setPontosDeVida(personagem.getPontosDeVida() - dano);
+
+			// Quando sofre dano, personagem perde os caquis coletados
+			personagem.setContagemDeCaquis(0);
+		}
 
 		// Verifica se personagem morreu
 		if (personagem.getPontosDeVida() == 0) {
