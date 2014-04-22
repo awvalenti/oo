@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo1.incorreto;
+package oo.encapsulamento.exemplo1.correto;
 
 import java.math.BigDecimal;
 
@@ -6,16 +6,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
-public class InterfaceSwing extends JPanel {
+public class TelaSwing extends JPanel {
 
 	private JTextField campoValorTotalVenda = new JTextField();
 
 	public void atualizarValorTotalVenda(Venda venda) {
 		// Trecho 1
-		BigDecimal valorTotalVenda = BigDecimal.ZERO;
-		for (ItemVenda item : venda.getItens()) {
-			valorTotalVenda = valorTotalVenda.add(item.getProduto().getValor().multiply(item.getQuantidade()));
-		}
+		BigDecimal valorTotalVenda = venda.calcularValorTotal();
 
 		// Trecho 2
 		campoValorTotalVenda.setText(valorTotalVenda.toString());

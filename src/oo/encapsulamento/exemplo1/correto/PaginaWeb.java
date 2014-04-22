@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
 @WebServlet("/venda/resumo")
-public class InterfaceWeb extends HttpServlet {
+public class PaginaWeb extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
