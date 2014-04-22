@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo1.correto;
+package oo.encapsulamento.exemplo1.incorreto.interfacegrafica.web;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -8,6 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import oo.encapsulamento.exemplo1.incorreto.entidades.ItemVenda;
+import oo.encapsulamento.exemplo1.incorreto.entidades.Venda;
 
 @SuppressWarnings("serial")
 @WebServlet("/venda/resumo")
@@ -19,7 +22,10 @@ public class PaginaWeb extends HttpServlet {
 		Venda venda = (Venda) request.getSession().getAttribute("venda");
 
 		// Trecho 1
-		BigDecimal valorTotalVenda = venda.calcularValorTotal();
+		BigDecimal valorTotalVenda = BigDecimal.ZERO;
+		for (ItemVenda item : venda.getItens()) {
+			valorTotalVenda = valorTotalVenda.add(item.getProduto().getValor().multiply(item.getQuantidade()));
+		}
 
 		// Trecho 2
 		request.setAttribute("valorTotalVenda", valorTotalVenda);

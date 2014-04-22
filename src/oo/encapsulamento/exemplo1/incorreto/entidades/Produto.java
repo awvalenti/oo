@@ -1,4 +1,4 @@
-package oo.encapsulamento.exemplo1.correto;
+package oo.encapsulamento.exemplo1.incorreto.entidades;
 
 import java.math.BigDecimal;
 

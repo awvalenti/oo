@@ -1,9 +1,11 @@
-package oo.encapsulamento.exemplo1.correto;
+package oo.encapsulamento.exemplo1.correto.interfacegrafica.desktop;
 
 import java.math.BigDecimal;
 
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import oo.encapsulamento.exemplo1.correto.entidades.Venda;
 
 @SuppressWarnings("serial")
 public class TelaSwing extends JPanel {
