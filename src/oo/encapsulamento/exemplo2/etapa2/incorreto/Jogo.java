@@ -9,8 +9,10 @@ public class Jogo {
 	}
 
 	public void aoColidirComCaqui() {
+		// Coletou um caqui
 		personagem.setContagemDeCaquis(personagem.getContagemDeCaquis() + 1);
 
+		// A cada 10 caquis, aumenta um ponto de vida
 		if (personagem.getContagemDeCaquis() % 10 == 0) {
 			personagem.setPontosDeVida(personagem.getPontosDeVida() + 1);
 		}
