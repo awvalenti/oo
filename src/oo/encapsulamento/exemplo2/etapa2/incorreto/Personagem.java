@@ -2,17 +2,9 @@ package oo.encapsulamento.exemplo2.etapa2.incorreto;
 
 public class Personagem {
 
-	private int pontosDeVida = 10;
 	private int contagemDeCaquis = 0;
 	private boolean invencivel = false;
-
-	public int getPontosDeVida() {
-		return pontosDeVida;
-	}
-
-	public void setPontosDeVida(int pontosDeVida) {
-		this.pontosDeVida = pontosDeVida;
-	}
+	private int pontosDeVida = 10;
 
 	public int getContagemDeCaquis() {
 		return contagemDeCaquis;
@@ -28,6 +20,14 @@ public class Personagem {
 
 	public void setInvencivel(boolean invencivel) {
 		this.invencivel = invencivel;
+	}
+
+	public int getPontosDeVida() {
+		return pontosDeVida;
+	}
+
+	public void setPontosDeVida(int pontosDeVida) {
+		this.pontosDeVida = pontosDeVida;
 	}
 
 }

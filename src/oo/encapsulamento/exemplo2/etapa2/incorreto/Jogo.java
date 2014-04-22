@@ -10,6 +10,10 @@ public class Jogo {
 
 	public void aoColidirComCaqui() {
 		personagem.setContagemDeCaquis(personagem.getContagemDeCaquis() + 1);
+
+		if (personagem.getContagemDeCaquis() % 10 == 0) {
+			personagem.setPontosDeVida(personagem.getPontosDeVida() + 1);
+		}
 	}
 
 	public void aoColidirComItemDeInvencibilidade() {

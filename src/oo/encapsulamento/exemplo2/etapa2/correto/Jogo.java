@@ -8,12 +8,12 @@ public class Jogo {
 		this.personagem = personagem;
 	}
 
-	public void aoColidirComItem() {
-		personagem.adicionarItem(new Item());
+	public void aoColidirComCaqui() {
+		personagem.coletarCaqui();
 	}
 
 	public void aoColidirComInvencibilidade() {
-		personagem.setInvencivel(true);
+		personagem.ficarInvencivel();
 	}
 
 	public void aoColidirComInimigo(Inimigo inimigo) {
