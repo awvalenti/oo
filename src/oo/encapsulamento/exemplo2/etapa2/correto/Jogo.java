@@ -12,7 +12,7 @@ public class Jogo {
 		personagem.coletarCaqui();
 	}
 
-	public void aoColidirComInvencibilidade() {
+	public void aoColidirComItemDeInvencibilidade() {
 		personagem.ficarInvencivel();
 	}
 
