@@ -3,9 +3,11 @@ package oo.encapsulamento.exemplo2.etapa2.correto;
 public class Jogo {
 
 	private Personagem personagem;
+	private boolean invencibilidadePermitida;
 
-	public Jogo(Personagem personagem) {
+	public Jogo(Personagem personagem, boolean invencibilidadePermitida) {
 		this.personagem = personagem;
+		this.invencibilidadePermitida = invencibilidadePermitida;
 	}
 
 	public void aoColidirComCaqui() {
@@ -13,7 +15,9 @@ public class Jogo {
 	}
 
 	public void aoColidirComItemDeInvencibilidade() {
-		personagem.ficarInvencivel();
+		if (invencibilidadePermitida) {
+			personagem.ficarInvencivel();
+		}
 	}
 
 	public void aoColidirComInimigo(Inimigo inimigo) {
