@@ -21,10 +21,10 @@ public class PaginaWeb extends HttpServlet {
 		Venda venda = (Venda) request.getSession().getAttribute("venda");
 
 		// Trecho 1
-		BigDecimal valorTotalVenda = venda.calcularValorTotal();
+		BigDecimal total = venda.calcularValorTotal();
 
 		// Trecho 2
-		request.setAttribute("valorTotalVenda", valorTotalVenda);
+		request.setAttribute("valorTotalVenda", total);
 
 		// Trecho 3
 		request.getRequestDispatcher("WEB-INF/venda/resumo.jsp").forward(request, response);

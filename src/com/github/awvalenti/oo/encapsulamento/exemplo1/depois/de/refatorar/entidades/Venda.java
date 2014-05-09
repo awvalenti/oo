@@ -12,11 +12,11 @@ public class Venda {
 	}
 
 	public BigDecimal calcularValorTotal() {
-		BigDecimal valorTotal = BigDecimal.ZERO;
+		BigDecimal total = BigDecimal.ZERO;
 		for (ItemVenda item : itens) {
-			valorTotal = valorTotal.add(item.calcularValor());
+			total = total.add(item.calcularValor());
 		}
-		return valorTotal;
+		return total;
 	}
 
 }

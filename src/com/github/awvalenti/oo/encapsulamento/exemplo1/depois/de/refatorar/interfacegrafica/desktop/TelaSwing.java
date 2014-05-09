@@ -18,10 +18,10 @@ public class TelaSwing extends JPanel {
 
 	public void atualizarValorTotalVenda(Venda venda) {
 		// Trecho 1
-		BigDecimal valorTotalVenda = venda.calcularValorTotal();
+		BigDecimal total = venda.calcularValorTotal();
 
 		// Trecho 2
-		campoValorTotalVenda.setText(valorTotalVenda.toString());
+		campoValorTotalVenda.setText(total.toString());
 	}
 
 }

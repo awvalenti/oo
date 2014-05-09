@@ -22,13 +22,13 @@ public class PaginaWeb extends HttpServlet {
 		Venda venda = (Venda) request.getSession().getAttribute("venda");
 
 		// Trecho 1
-		BigDecimal valorTotalVenda = BigDecimal.ZERO;
+		BigDecimal total = BigDecimal.ZERO;
 		for (ItemVenda item : venda.getItens()) {
-			valorTotalVenda = valorTotalVenda.add(item.getProduto().getValor().multiply(item.getQuantidade()));
+			total = total.add(item.getProduto().getValor().multiply(item.getQuantidade()));
 		}
 
 		// Trecho 2
-		request.setAttribute("valorTotalVenda", valorTotalVenda);
+		request.setAttribute("valorTotalVenda", total);
 
 		// Trecho 3
 		request.getRequestDispatcher("WEB-INF/venda/resumo.jsp").forward(request, response);
