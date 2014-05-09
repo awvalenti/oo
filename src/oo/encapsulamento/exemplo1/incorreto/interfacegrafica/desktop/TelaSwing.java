@@ -13,6 +13,10 @@ public class TelaSwing extends JPanel {
 
 	private JTextField campoValorTotalVenda = new JTextField();
 
+	public TelaSwing() {
+		add(campoValorTotalVenda);
+	}
+
 	public void atualizarValorTotalVenda(Venda venda) {
 		// Trecho 1
 		BigDecimal valorTotalVenda = BigDecimal.ZERO;
