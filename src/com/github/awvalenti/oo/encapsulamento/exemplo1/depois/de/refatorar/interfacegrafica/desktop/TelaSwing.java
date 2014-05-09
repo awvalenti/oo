@@ -1,7 +1,5 @@
 package com.github.awvalenti.oo.encapsulamento.exemplo1.depois.de.refatorar.interfacegrafica.desktop;
 
-import java.math.BigDecimal;
-
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -17,11 +15,8 @@ public class TelaSwing extends JPanel {
 	}
 
 	public void atualizarValorTotalVenda(Venda venda) {
-		// Trecho 1
-		BigDecimal total = venda.calcularValorTotal();
-
-		// Trecho 2
-		campoValorTotalVenda.setText(total.toString());
+		// Trechos 1 e 2 mesclados
+		campoValorTotalVenda.setText(venda.calcularValorTotal().toString());
 	}
 
 }
